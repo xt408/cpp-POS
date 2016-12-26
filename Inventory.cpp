@@ -448,7 +448,6 @@ void Inventory::selectionSort(string** array, int column)
 	}
 }
 
-
 void Inventory::addABook(){
 	string isbn, title, author, publisher, date_added, quantity, wholesale_cost, retail_price;
 
@@ -506,7 +505,6 @@ void Inventory::addABook(){
 	}
 	system("pause");
 }
-
 
 void Inventory::editABook(){
 	//listBooks();
@@ -591,7 +589,6 @@ void Inventory::editABook(){
 	system("pause");
 }
 
-
 void Inventory::deleteABook(){
 	//listBooks();
 
@@ -648,7 +645,6 @@ void Inventory::deleteABook(){
 	}
 	system("pause");
 }
-
 
 int Inventory::date2int(string c_date){
 	int mm=0, dd=0, yyyy=0;

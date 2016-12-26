@@ -2,14 +2,13 @@
 //  main.cpp
 //  Created on:  11/15/2016
 //  Author: Robert T
+//  IDE Used: Microsoft Visual Studio 2013
 ///////////////////////////////////////////////////////////
-
 #include <iostream>
 #include "Cashier.h"
 #include "Inventory.h"
 #include "Report.h"
 using namespace std;
-
 
 int mainMenu()
 {
@@ -43,7 +42,7 @@ int main()
 	bool exit = false;
 	int user_choise;
 
-	// For polymorphism
+	// Polymorphism
 	Inventory * baseObj;
 	Cashier cashierObj;
 	Inventory inventoryObj;
@@ -98,9 +97,7 @@ int main()
 			system("pause");
 			system("cls");
 		}
-
 	} while (exit==false);
-
 
 	return 0;
 }
