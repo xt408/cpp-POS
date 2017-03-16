@@ -36,8 +36,6 @@ public:
     Node<T> * min();        // Get minimum node
     void removeMin();       // Remove minimum node
 
-
-    // Student added extra functions
     void importDataFile(string );  // Import data file
     void showList(bool, Node<T> *, int);        // Print all nodes
 
