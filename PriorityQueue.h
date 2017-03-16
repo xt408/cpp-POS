@@ -1,3 +1,9 @@
+///////////////////////////////////////////////////////////
+//  Priority Queue
+//  Created on:  11/15/2016
+//  Author: Robert T
+//  IDE Used: Microsoft Visual Studio 2013
+///////////////////////////////////////////////////////////
 
 #ifndef _DOUBLY_PRIORITYQUEUE
 #define _DOUBLY_PRIORITYQUEUE
