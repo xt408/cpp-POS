@@ -1,0 +1,21 @@
+001|test|auth|pub|11/26/2016|7|10|15
+002|test|author|pub|11/26/2016|8|15|50
+0071809252|Java: A Beginner's Guide|Herbert Schildt |McGraw-Hill Education|12/1/2013|50|10|21.19
+013284737X|Data Structures & Algorithm Analysis in C++|Mark A. Weiss |Pearson|3/8/2016|10|61.67|94.87
+1118999878|Linux Bible 9th Edition|Christopher Negus|Wiley|1/8/2014|7|19|31.99
+111931061X|Windows 10 For Seniors For Dummies|Peter Weverka|For Dummies|4/5/2015|3|8|14.32
+133769399|Starting Out with C++ from Control Structures to Objects|Tony Gaddis|Pearson|5/8/2016|5|103.79|159.67
+1430267917|Application-Scale JavaScript Development|teve Fenton|Apress|12/1/2015|8|15|39.24
+1449344682|MongoDB: The Definitive Guide|Kristina Chodorow|O'Reilly Media|7/1/2016|9|30|36.54
+149190142X|Data Science from Scratch|Joel Grus|O'Reilly Media|11/7/2016|6|15.5|31.19
+1491904240|You Don't Know Js|Kyle Simpson|O'Reilly Media|12/5/2016|10|110|182
+1491929006|Building Native Mobile Apps with JavaScript|Bonnie Eisenman|O'Reilly Media|1/8/2017|5|50|80
+1540367231|C#: Programming|Joseph Connor|Independent|12/1/2016|5|5|8.82
+1593275994|Automate the Boring Stuff with Python|Al Sweigart|No Starch Press|12/6/2016|8|40|50
+1593276036|Python Crash Course|Eric Matthes|No Starch Press|12/5/2016|10|110|182
+1617291609|MongoDB in Action: Covers MongoDB version 3.0|Kyle Banker |Manning Publications|4/8/2016|7|35|42.34
+1783983523|Java EE 7 Development with NetBeans 8|David R. Heffelfinger |Packt Publishing|11/8/2015|8|20|49.99
+1785881507|Node.JS Web Development - Third Edition|David Herron |Packt Publishing|8/5/2015|5|20|44.99
+1785886207|Switching to Angular 2|Minko Gechev |Packt Publishing|12/1/2017|1|20|34.99
+495391328|Discrete Mathematics with Applications|Susanna S. Epp|Cengage Learning|1/8/2016|10|227.86|350.56
+495391328|Discrete Mathematics with Applications|Susanna S. Epp|Cengage Learning|1/8/2016|10|227.86|350.56
