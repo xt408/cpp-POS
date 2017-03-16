@@ -359,10 +359,8 @@ void Inventory::setRetailPrice(int subscript, int price){
 }
 
 //***************************************************************************
-//* This funciton will perform binary search								*
-//*																			*
-//* Auther: Xu Tang															*
-//* Date: 9/30/2016															*
+//* This funciton will perform binary search                                *
+//* Auther: Xu Tang                                                         *
 //***************************************************************************
 int Inventory::binarySearch(string ** array, string keyword, int column=0)
 {
@@ -404,14 +402,12 @@ int Inventory::binarySearch(string ** array, string keyword, int column=0)
 }
 
 //***************************************************************************
-//* This funciton will perform selecting sort								*
+//* This funciton will perform selecting sort                               *
 //* For Ascending sort                                                      *
 //* 1. Locate smallest element in array ¨Cswap it with element at position 0 *
-//* 2. Locate second smallest element ¨Cswap it with element at position 1	*
-//* 3. Continue process until array sorted									*
-//*																			*
-//* Auther: Xu Tang															*
-//* Date: 9/30/2016															*
+//* 2. Locate second smallest element ¨Cswap it with element at position 1   *
+//* 3. Continue process until array sorted                                  *
+//* Auther: Xu Tang                                                         *
 //***************************************************************************
 void Inventory::selectionSort(string** array, int column)
 {

@@ -5,9 +5,20 @@
 //  IDE Used: Microsoft Visual Studio 2013
 ///////////////////////////////////////////////////////////
 #include <iostream>
+#include <fstream>
+#include <string>
+#include <sstream>
+#include <iomanip>
+
+#include "PriorityQueue.cpp"
+#include "HuffmanTree.h"
+
 #include "Cashier.h"
 #include "Inventory.h"
 #include "Report.h"
+
+
+
 using namespace std;
 
 int mainMenu()
@@ -47,6 +58,18 @@ int main()
 	Cashier cashierObj;
 	Inventory inventoryObj;
 	Report reportObj;
+
+    // Encoding
+    string infile = "books.txt", outfile = "books.db";
+
+    PriorityQueue<char> Heap;
+    Heap.importDataFile(infile);
+    Heap.bubbleSort();
+    
+    // Build Huffman tree
+    HuffmanTree<char> tree;
+    tree.buildTreeFromHeap(Heap);
+    tree.encode(infile, outfile);
 
 	do
 	{
