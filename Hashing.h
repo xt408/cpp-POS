@@ -48,7 +48,7 @@ public:
     //friend class HashMap;
 };
 
-
+// Hash Tree - chain as binary tree
 template <class K, class V, class H>
 class HashMap {
 private:

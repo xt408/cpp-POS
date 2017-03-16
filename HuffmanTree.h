@@ -250,6 +250,7 @@ public:
         {
             search(nodePtr->right, x, code);
 
+            // Is leaf and is found
             if (nodePtr->left == nullptr && nodePtr->right == nullptr && nodePtr->getSymbol() == x)
             {
                 //cout << nodePtr->getSymbol() << " (" << nodePtr->code << ") " << endl;
@@ -593,16 +594,7 @@ public:
             cout << nodePtr->data << endl;
         }
     }
-    
-    void printArray()
-    {
-        for (int i = 0; i < size; i++)
-            if (array[i])
-                cout << array[i] << ' ';
-            else
-                cout << '.';
-        cout << endl;
-    }
+   
 };
 
 #endif
