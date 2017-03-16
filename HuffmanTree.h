@@ -357,7 +357,7 @@ public:
         {
             if (nodePtr->left == nullptr && nodePtr->right == nullptr) // is leaf
             {
-                ret = ret + nodePtr->code +nodePtr->key;
+                ret = ret + nodePtr->code +nodePtr->key + "|";
                 //cout << ret << endl; system("pause");
             }
             
@@ -431,7 +431,7 @@ public:
 
             // tree as string
             string treeString = dumpTree(root, "");
-            dataOutfile << treeString << endl;
+            dataOutfile << "<tree>" + treeString + "</tree>" << endl;
 
 
             // convert string to bit
