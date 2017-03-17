@@ -182,6 +182,97 @@ public:
         //cout << "remove: " << nodePtr->key << endl;
     }
     
+    void importTree(string file)
+    {
+        root = new Node<T>;
+        Node<T> * nodePtr;
+
+        fstream dataInfile;
+        string line, code, ascii;
+        int length;
+        
+        dataInfile.open(file);
+        if (dataInfile.fail())
+        {
+            cout << "Error: couldn't open the data file '" << file << "'." << endl;
+            system("pause");
+            exit(0);
+        }
+        else
+        {
+            getline(dataInfile, line);
+            //cout << "size: " << line << endl;
+
+            getline(dataInfile, line);
+            //cout << "tree: " << line << endl;
+
+            length = line.length();
+            for (int i = 0; i < length; i++)
+            {
+                if (line[i] == '0' || line[i] == '1')
+                {
+                    code = code + line[i];
+                }
+                else
+                {
+                    if (line[i] ==':')
+                    {
+                        do
+                        {
+                            i++;
+                            if (line[i] != '|')
+                            {
+                                ascii = ascii + line[i];
+                            }                            
+                        } while (line[i] != '|');
+                        
+                    }
+                    //cout << "code: " << code << "; ascii: " << ascii << endl;
+
+                    // create tree
+                    int len = code.length();
+                    nodePtr = root; 
+                    
+                    for (int k = 0; k < len; k++)
+                    {
+
+                        if (code[k] == '0') // left
+                        {                         
+                            if (nodePtr->left == nullptr)
+                            {
+                                nodePtr->left = new Node<T>;
+                            }
+
+                            nodePtr = nodePtr->left;
+                        }
+                        else// right - is 1
+                        {
+                            if (nodePtr->right == nullptr)
+                            {
+                                nodePtr->right = new Node<T>;
+                            }
+
+                            nodePtr = nodePtr->right;
+                        }
+                    }
+
+                    nodePtr->code = code;
+                    nodePtr->key = (char)stoi(ascii);
+
+
+                    code = "";
+                    ascii = "";
+                }
+                
+            }
+
+
+            //inOrder(root);
+            //system("pause");
+        }
+    }
+
+
     void add2Hash(Node<T> * nodePtr)
     {
         if (nodePtr != NULL)

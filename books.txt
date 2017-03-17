@@ -15,5 +15,3 @@
 1783983523|Java EE 7 Development with NetBeans 8|David R. Heffelfinger |Packt Publishing|11/8/2015|8|20|49.99
 1785881507|Node.JS Web Development - Third Edition|David Herron |Packt Publishing|8/5/2015|5|20|44.99
 1785886207|Switching to Angular 2|Minko Gechev |Packt Publishing|12/1/2017|1|20|34.99
-495391328|Discrete Mathematics with Applications|Susanna S. Epp|Cengage Learning|1/8/2016|10|227.86|350.56
-495391328|Discrete Mathematics with Applications|Susanna S. Epp|Cengage Learning|1/8/2016|10|227.86|350.56

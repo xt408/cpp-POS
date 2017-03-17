@@ -47,6 +47,31 @@ int mainMenu()
 	return choice;
 }
 
+void exportTree()
+{
+    // Encoding
+    string infile = "books.txt", outfile = "books.db";
+
+    PriorityQueue<char> Heap;
+    Heap.importDataFile(infile);
+    Heap.bubbleSort();
+
+    // Build Huffman tree
+    HuffmanTree<char> tree;
+    tree.buildTreeFromHeap(Heap);
+    tree.encode(infile, outfile);
+}
+
+void importTree()
+{
+    // Encoding
+    string infile = "books.db";
+
+    // Build Huffman tree
+    HuffmanTree<char> tree;
+    tree.importTree(infile);
+}
+
 
 int main()
 {
@@ -59,17 +84,8 @@ int main()
 	Inventory inventoryObj;
 	Report reportObj;
 
-    // Encoding
-    string infile = "books.txt", outfile = "books.db";
-
-    PriorityQueue<char> Heap;
-    Heap.importDataFile(infile);
-    Heap.bubbleSort();
-    
-    // Build Huffman tree
-    HuffmanTree<char> tree;
-    tree.buildTreeFromHeap(Heap);
-    tree.encode(infile, outfile);
+    //exportTree(); // Dump tree
+    importTree();
 
 	do
 	{

@@ -30,8 +30,6 @@ public:
     // Constructors
     Node()
     {
-        right = nullptr;
-        left = nullptr;
     }
 
     Node(T akey)
