@@ -295,17 +295,20 @@ public:
 
     int bits2Int(string str)
     {
-        int ch = 0;
-        int i = 7;
-        for (i = 7; i >= 0; i--)
+        int len = str.length();
+        int ret = 0;
+        int power;
+
+        for (int i = len; i >= 0; i--)
         {
             if (str[i] == '1')
             {
-                ch += pow(2, (double)(7 - i));
+                power = len - i -1;
+                ret += (int)pow(2, power);
             }
-
         }
-        return ch;
+
+        return ret;
     }
 
     char bits2char(string str)
@@ -357,16 +360,14 @@ public:
         {
             if (nodePtr->left == nullptr && nodePtr->right == nullptr) // is leaf
             {
-                ret = ret + nodePtr->code +nodePtr->key + "|";
-                //cout << ret << endl; system("pause");
+                ret += nodePtr->code + ":" + to_string((int)nodePtr->key) + "|";
+                //cout << codeInt << endl; system("pause");
             }
             
             if (nodePtr->left)
             {
                 ret = dumpTree(nodePtr->left, ret);
-            }
-            
-
+            }          
 
             if (nodePtr->right)
             {
@@ -431,7 +432,7 @@ public:
 
             // tree as string
             string treeString = dumpTree(root, "");
-            dataOutfile << "<tree>" + treeString + "</tree>" << endl;
+            dataOutfile << treeString << endl;
 
 
             // convert string to bit
