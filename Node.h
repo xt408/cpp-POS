@@ -1,15 +1,16 @@
-#ifndef _TREE_NODE
-#define _TREE_NODE
-
-#include <iostream>
-#include <string>
-
 ///////////////////////////////////////////////////////////
 //  Tree Node
 //  Created on:  11/15/2016
 //  Author: Robert T
 //  IDE Used: Microsoft Visual Studio 2013
 ///////////////////////////////////////////////////////////
+
+#ifndef _TREE_NODE
+#define _TREE_NODE
+
+#include <iostream>
+#include <string>
+
 using namespace std;
 
 // Node class
